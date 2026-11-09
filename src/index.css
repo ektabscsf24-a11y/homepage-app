@@ -1,0 +1,67 @@
+:root {
+  --kc-teal: #0f3d3e;
+  --kc-teal-dark: #0a2b2c;
+  --kc-mint: #e3eee9;
+  --kc-saffron: #f2b134;
+  --kc-ink: #1b2a2a;
+  --bs-body-font-family: 'Source Sans 3', system-ui, sans-serif;
+  --bs-body-color: var(--kc-ink);
+  --bs-body-font-size: 1.0625rem;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Bricolage Grotesque', 'Segoe UI', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.kc-navbar { background: var(--kc-teal); }
+.kc-navbar .nav-link { color: #cfe0da; }
+.kc-navbar .nav-link:hover,
+.kc-navbar .nav-link:focus { color: #fff; }
+
+.btn-saffron {
+  --bs-btn-color: var(--kc-teal-dark);
+  --bs-btn-bg: var(--kc-saffron);
+  --bs-btn-border-color: var(--kc-saffron);
+  --bs-btn-hover-color: var(--kc-teal-dark);
+  --bs-btn-hover-bg: #f7c35e;
+  --bs-btn-hover-border-color: #f7c35e;
+  --bs-btn-active-bg: #e0a01f;
+  --bs-btn-active-border-color: #e0a01f;
+  --bs-btn-active-color: var(--kc-teal-dark);
+  font-weight: 600;
+}
+
+.kc-hero {
+  background: var(--kc-teal);
+  color: #fff;
+  padding: 6rem 0 7rem;
+}
+.kc-hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.02;
+}
+.kc-hero .lead { color: #cfe0da; max-width: 34rem; }
+.kc-hero-badge {
+  background: var(--kc-mint);
+  color: var(--kc-teal);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.kc-hero-badge dt { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.4rem; font-weight: 800; line-height: 1; }
+.kc-hero-badge dd { margin: 0.25rem 0 1.25rem; }
+.kc-hero-badge dd:last-child { margin-bottom: 0; }
+
+.kc-features { background: var(--kc-mint); padding: 5rem 0; }
+.kc-features .card { border: 0; border-radius: 1rem; }
+.kc-features .card-title { font-weight: 700; }
+.kc-features .card-img-icon {
+  width: 3rem; height: 3rem; border-radius: 0.75rem;
+  background: var(--kc-teal); color: var(--kc-saffron);
+  display: grid; place-items: center; font-size: 1.5rem;
+}
+
+.kc-footer { background: var(--kc-teal-dark); color: #b7cbc4; padding: 3rem 0 2rem; }
+.kc-footer a { color: #b7cbc4; text-decoration: none; }
+.kc-footer a:hover { color: #fff; text-decoration: underline; }
